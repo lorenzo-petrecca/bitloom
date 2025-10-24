@@ -1,0 +1,143 @@
+:root {
+    --font-title1: 2.6rem;
+    --font-title2: 2.2rem;
+    --font-title3: 1.8rem;
+    --font-title4: 1.6rem;
+    --font-biggerText: 1.8rem;
+    --font-bigText: 1.6rem;
+    --font-mediumText: 1.4rem;
+    --font-normalText: 1.2rem;
+    --font-smallText: 1rem;
+    --font-smallerText: 0.8rem;
+}
+
+
+.typo-alignStart {
+  text-align: start !important;
+}
+.typo-alignCenter {
+  text-align: center !important;
+}
+.typo-alignEnd {
+  text-align: end !important;
+}
+
+.typo-uppercase {
+  text-transform: uppercase;
+}
+
+.typo-lowercase {
+  text-transform: lowercase;
+}
+
+.typo-capitalize {
+  text-transform: capitalize;
+}
+
+.typo-pageTitle {
+  font-size: var(--font-title1);
+  font-weight: 800;
+  color: var(--text);
+}
+.typo-pageTitle2 {
+  font-size: var(--font-title2);
+  font-weight: 700;
+  color: var(--text);
+}
+.typo-pageTitle3 {
+  font-size: var(--font-title3);
+  font-weight: 500;
+  color: var(--text);
+}
+.typo-pageTitle4 {
+  font-size: var(--font-title4);
+  font-weight: 400;
+  color: var(--text);
+}
+
+
+.typo-bigger {
+  font-size: var(--font-biggerText);
+  font-weight: 600;
+  color: var(--text);
+}
+.typo-big {
+  font-size: var(--font-bigText);
+  font-weight: 500;
+  color: var(--text);
+}
+.typo-medium {
+  font-size: var(--font-mediumText);
+  font-weight: 400;
+  color: var(--text);
+}
+.typo-normal {
+  font-size: var(--font-normalText);
+  font-weight: 400;
+  color: var(--text);
+}
+.typo-small {
+  font-size: var(--font-smallText);
+  font-weight: 300;
+  color: var(--text);
+}
+.typo-smaller {
+  font-size: var(--font-smallerText);
+  font-weight: 200;
+  color: var(--text);
+}
+
+.typo-w9 {
+  font-weight: 900;
+}
+.typo-w8 {
+  font-weight: 800;
+}
+.typo-w7 {
+  font-weight: 700;
+}
+.typo-w6 {
+  font-weight: 600;
+}
+.typo-w5 {
+  font-weight: 500;
+}
+.typo-w4 {
+  font-weight: 400;
+}
+.typo-w3 {
+  font-weight: 300;
+}
+.typo-w2 {
+  font-weight: 200;
+}
+.typo-w1 {
+  font-weight: 100;
+}
+
+.typo-thin {
+  font-weight: 100;
+}
+.typo-light {
+  font-weight: 300;
+}
+.typo-regular {
+  font-weight: 400;
+}
+.typo-semibold {
+  font-weight: 600;
+}
+.typo-bold {
+  font-weight: 700;
+}
+.typo-black {
+  font-weight: 900;
+}
+
+
+.typo-italic {
+  font-style: italic;
+}
+.typo-normal {
+  font-style: normal;
+}

@@ -1,0 +1,35 @@
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  padding: 2rem;
+  grid-template-columns: 1fr 1fr;
+  /* border: 1px solid var(--border); */
+  /* background-color: var(--surface); */
+  border-radius: 1.6rem;
+}
+.field {
+  display: grid;
+  gap: .8rem;
+  min-width: 16rem;
+  flex-grow: 3;
+  flex-basis: calc(50% - (.8rem *2));
+}
+.label { color: var(--muted); }
+.input {
+  width: 100%;
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: .8rem;
+  padding: 1rem;
+  appearance: base-select;
+}
+
+.input::picker-icon {
+  color: var(--muted);           /* colore della freccetta */
+  width: 1rem;
+  height: 1rem;
+}
+

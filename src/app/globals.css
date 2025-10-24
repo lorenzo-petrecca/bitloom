@@ -1,13 +1,37 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base */
+  --bg:           hsl(230 25% 10%);   /* sfondo principale (quasi blu notte) */
+  --surface:      hsl(230 22% 14%);   /* pannelli */
+  --surface-2:    hsl(230 20% 18%);   /* hover/strati interni */
+  --border:       hsl(230 18% 28%);   /* bordi discreti */
+  --muted:        hsl(230 15% 70%);   /* testo attenuato/label */
+  --text:         hsl(230 20% 95%);   /* testo principale */
+
+  /* Accent (blu-viola) */
+  --accent:       hsl(265 85% 62%);   /* primario (bottoni, pixel ON) */
+  --accent-strong:hsl(265 90% 55%);   /* hover/focus del primario */
+  --on-accent:    hsl(265 100% 10%);  /* testo su sfondo accent (alto contrasto) */
+
+  /* Stati */
+  --success:      hsl(155 70% 45%);
+  --warning:      hsl(45 90% 55%);
+  --error:        hsl(0 75% 60%);
+
+  /* Grid specific */
+  --grid-off:     hsl(230 22% 12%);   /* celle spente */
+  --grid-on:      var(--accent);      /* celle accese */
+  --grid-stroke:  hsl(230 18% 26%);   /* reticolo/bordi celle */
+
+  /* Focus ring */
+  --focus:        hsl(265 95% 70%);
+
+  /* Griglia */
+  --cell-size: 2.6rem;  /* Regola dimensione della cella */
+  --cell-gap: 0.4rem;    /* Regola distanza tra celle */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-size: 62.5%;
 }
 
 html,
@@ -17,8 +41,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--text);
+  background: var(--bg);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,10 +57,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }

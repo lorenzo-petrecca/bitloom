@@ -1,0 +1,208 @@
+.buttons-btn {
+  width: auto;
+  appearance: none;
+  height: 4.4rem;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  transition:
+    all 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2rem;
+  gap: 8px;
+  font-family: inherit;
+}
+
+.buttons-rounded {
+    border-radius: 2rem;
+    border: 1px solid transparent !important;
+}
+
+.buttons-smussed {
+    --cut: .5rem;
+    --bw: 1px;
+    /* taglio angoli */
+    clip-path: polygon(
+      0 0,                             /* TL normale */
+      calc(100% - var(--cut)) 0,       /* inizio smusso TR */
+      100% var(--cut),                 /* fine smusso TR */
+      100% 100%,                       /* BR normale */
+      var(--cut) 100%,                 /* inizio smusso BL */
+      0 calc(100% - var(--cut))        /* fine smusso BL */
+    );
+    border: none !important;
+    border-radius: 0 !important;
+    position: relative;
+}
+
+.buttons-smussed::before {
+    content: "";
+    position: absolute;
+    inset: var(--bw);      /* espande verso fuori dello spessore bordo */
+    z-index: -1;
+    pointer-events: none;
+
+    /* stessa forma ma con taglio aumentato di --bw */
+    clip-path: polygon(
+  0 0,                                                  /* TL normale */
+  calc(100% - var(--cut) - var(--bw)) 0,                /* inizio smusso TR */
+  100% calc(var(--cut) + var(--bw)),                    /* fine smusso TR */
+  100% 100%,                                            /* BR normale */
+  calc(var(--cut) + var(--bw)) 100%,                    /* inizio smusso BL */
+  0 calc(100% - var(--cut) - var(--bw))                 /* fine smusso BL */
+);
+      transition: all 0.2s,;
+}
+
+.buttons-btn:disabled {
+  opacity: .3;
+  pointer-events: none;
+}
+
+.buttons-lnk {
+  appearance: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: underline;
+  background-color: transparent;
+  color: var(--text);
+  padding: 0;
+  height: auto;
+  width: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons-lnk:hover {
+  color: var(--access);
+}
+
+.buttons-lnk:disabled {
+  opacity: .3;
+  pointer-events: none;
+}
+
+.buttons-iconBtn {
+  appearance: none;
+  border-radius: 4.8rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  border: 1px solid transparent;
+  transition:
+    all 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  overflow: hidden;
+}
+
+.buttons-iconBtn:disabled {
+  opacity: .3;
+  pointer-events: none;
+}
+
+.buttons-underline {
+  text-decoration: underline;
+}
+.buttons-nounderline {
+  text-decoration: none;
+}
+
+.buttons-noborder {
+  border: none;
+}
+
+.buttons-primary {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+.buttons-secondary {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.buttons-primaryColor {
+    background-color: var(--accent);
+    color: var(--bg);
+}
+
+.buttons-btnsRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.buttons-outline {
+    background-color: transparent;
+    border: 1px solid red;
+}
+.buttons-primary.buttons-outline {
+  color: var(--text);
+  border: 1px solid var(--text);
+}
+.buttons-primaryColor.buttons-outline {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+
+/* outline smussed & outline smussed hover */
+.buttons-outline.buttons-smussed {
+    border: none !important;
+}
+.buttons-primary.buttons-outline.buttons-smussed {
+    background-color: var(--text) !important;
+}
+.buttons-primaryColor.buttons-outline.buttons-smussed {
+    background-color: var(--accent) !important;
+}
+.buttons-outline.buttons-smussed::before {
+    background-color: var(--bg) !important;
+}
+.buttons-outline.buttons-smussed:hover {
+    color: var(--bg);
+}
+.buttons-primary.buttons-outline.buttons-smussed:hover::before {
+    background-color: var(--text) !important;
+}
+.buttons-primaryColor.buttons-outline.buttons-smussed:hover::before {
+    background-color: var(--accent) !important;
+}
+/* --------------------------------------------+/
+
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    .buttons-primary:hover {
+      background-color: var(--accent-strong);
+      border-color: transparent;
+    }
+    .buttons-secondary:hover {
+      background-color: var(--accent-strong);
+      border-color: transparent;
+    }
+    .buttons-primaryColor:hover {
+      background-color: var(--accent-strong);
+      border-color: var(--accent-strong);
+    }
+
+    .buttons-primaryColorOutline:hover {
+      color: var(--accent-strong);
+      border: 1px solid var(--accent-strong);
+    }
+    .buttons-primaryOutline:hover {
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+}
