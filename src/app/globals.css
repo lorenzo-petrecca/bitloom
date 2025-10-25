@@ -1,6 +1,6 @@
 :root {
   /* Base */
-  --bg:           hsl(230 25% 10%);   /* sfondo principale (quasi blu notte) */
+  --bg:           hsl(230, 25%, 10%);   /* sfondo principale (quasi blu notte) */
   --surface:      hsl(230 22% 14%);   /* pannelli */
   --surface-2:    hsl(230 20% 18%);   /* hover/strati interni */
   --border:       hsl(230 18% 28%);   /* bordi discreti */

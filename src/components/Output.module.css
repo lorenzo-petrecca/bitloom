@@ -7,11 +7,15 @@
   border-radius: 1.6rem;
   height: 100%;
   row-gap: 20px;
+  max-width: 600px;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .title {
   width: 100%;
   color: var(--muted);
+  min-width: 0
 }
 
 .code {
@@ -27,8 +31,10 @@
   word-break: break-word;
   font-family: var(--font-mono);
   overflow: auto;
+  min-width: 0
 }
 
 .comment {
   color: var(--muted);
+  min-width: 0
 }

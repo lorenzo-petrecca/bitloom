@@ -1,0 +1,14 @@
+{
+  "name": "Bitloom",
+  "short_name": "Bitloom",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#12131a",
+  "theme_color": "#6f4aff",
+  "icons": [
+    { "src": "/icons/bitloom-logo_192x192.webp", "sizes": "192x192", "type": "image/webp", "purpose": "any maskable" },
+    { "src": "/icons/bitloom-logo_192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/bitloom-logo_512x512.webp", "sizes": "512x512", "type": "image/webp", "purpose": "any maskable" },
+    { "src": "/icons/bitloom-logo_512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

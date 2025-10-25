@@ -1,6 +1,8 @@
 "use client"
 
 import styles from "./page.module.css";
+import Image from "next/image";
+import InstallButton from "@/components/InstallButton";
 import MatrixSize from "@/components/MatrixSize";
 import Matrix from "@/components/Matrix";
 import OutputSettings from "@/components/OutputSettings";
@@ -53,7 +55,14 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <div className={styles.header}>
-          <h1 className="typo-pageTitle">Bitloom</h1>
+          <Image
+            src="/icons/bitloom-logo_512x512.webp"
+            alt="logo Bitloom"
+            width={40}
+            height={40}
+          />
+          <h1 className={`typo-pageTitle ${styles.pageTitle}`}>Bitloom</h1>
+          <InstallButton />
         </div>
         <div className={styles.editor}>
           <div className={styles.settings}>

@@ -1,0 +1,14 @@
+Bitloom — Copyright (c) 2025 Lorenzo Petrecca
+All rights reserved.
+
+This software is proprietary and confidential.
+Unauthorized copying, modification, distribution, use, or sale of this software,
+via any medium, is strictly prohibited.
+
+The source code and all associated files are provided for personal or
+evaluation purposes only. No license is granted to use this software in
+production or commercial environments without explicit written permission
+from the author.
+
+For inquiries regarding licensing or commercial use, contact:
+lollo.petrecca1998@gmail.com

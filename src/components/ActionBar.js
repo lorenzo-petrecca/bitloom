@@ -1,7 +1,7 @@
 "use client"
 
 import { useCallback, useState } from "react";
-import styles from "@/components/ActionsBar.module.css";
+import styles from "@/components/ActionBar.module.css";
 
 export default function ActionBar ({
   outputText = [],
